@@ -1,0 +1,77 @@
+Problem statement:
+Any online ordering system will basically have these major components:
+    1. Ability to show restaurants and dishes to the end user
+    2. An app to interact with users
+    3. Ability to search any dish and see its availability
+    4. Ability to add items in cart
+    5. Ability to make payment via different modes of payment
+    6. Ability to place an order
+    7. Ability to track back the status of the current order
+    8. User profile
+    9. User order history
+    10. Raise customer support queries
+    11. Ability to cancel an ongoing order
+    12. Ability to assign a rider who can complete the order
+    13. An to interact with delivery partners
+    14. Ability to compute earnings for the delivery partners
+    15. Ability to navigate the delivery partner to pick up order and then deliver the parcel to end users address
+    AND many more abilities can be a part of such a system.
+
+-----------------------------------------------------------------
+    Sanity:
+        Think about the cases that should be part of sanity suite and how can we achieve this efficiently?
+
+                Since this is an online food ordering system and the main thing such a business would care about would be:
+                        - user should be able to place an order
+                        - company should be able to capture payment details
+                        - orders placed should get assigned to a delivery partner
+                        - delivery partner should be in a state that he/she can accept the order
+                        - delivery partner should be able to pick the order from a restaurant and drop it at customer place
+                        many more..
+                  All these above mentioned flows should be part of sanity
+
+
+                  Best way to achieve this would be automate the backend api's which are part of above user flows.
+
+
+
+    Smoke:
+        Think about the cases that should be part of smoke suite and how can we achieve this efficiently?
+                 - user should be able to place an order
+                 - user should be able to cancel an order
+                 - company should be able to capture payment details
+                 - user should not be able to proceed with order if that restaurant is not servicable
+                 - orders placed should get assigned to a delivery partner
+                 - delivery partner should have option to deny the order
+                 - delivery partner should be in a state that he/she can accept the order
+                 - delivery partner should be able to pick the order from a restaurant and drop it at customer place
+                 - there should be a computation for the delivery partner as per his nos of orders etc
+                 many more..
+
+    Functional testing:
+                    - what if a user is trying to place an order thru web or mweb
+                    - what if internet is slow and a user is trying to make a payment
+                    - what if internet stops during the flow of order placement
+                    - are we displaying the correct order history
+                    - user should be logged in after successful auth
+                    - user should be able to add multiple address for delivery
+                    - user should be able to connect with delivery partner thru an in app option
+                    many more.
+
+    Non functional testing:
+                    - performance testing for those endpoints which will be under heavy load during dinner and lunch peaks
+                    - watch out cpu usage, memory usage when system is under heavy load
+                    - try to break the system and check the downtime we might have to face in case of outage
+                    many more..
+
+    Integration testing:
+                    - integration with a service which will help in payment
+                    - integration with a service which gives servicibility status of restaurants
+                    - integration with a service which provides latest location of a rider
+                    many more..
+
+    API testing:
+                - lookout for graceful handling of any sort of exceptions
+                - lookout for server response in case of invalid params
+                - server response in case mandatory param are missing
+                - in case we try to modify auth token in b/w server and client

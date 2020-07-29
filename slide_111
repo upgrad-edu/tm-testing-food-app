@@ -1,0 +1,37 @@
+Problem statement:
+Any online ordering system will basically have these major components:
+    1. Ability to show restaurants and dishes to the end user
+    2. An app to interact with users
+    3. Ability to search any dish and see its availability
+    4. Ability to add items in cart
+    5. Ability to make payment via different modes of payment
+    6. Ability to place an order
+    7. Ability to track back the status of the current order
+    8. User profile
+    9. User order history
+    10. Raise customer support queries
+    11. Ability to cancel an ongoing order
+    12. Ability to assign a rider who can complete the order
+    13. An to interact with delivery partners
+    14. Ability to compute earnings for the delivery partners
+    15. Ability to navigate the delivery partner to pick up order and then deliver the parcel to end users address
+    AND many more abilities can be a part of such a system.
+
+-------------------------------------------------------------------------------
+    what should be automated most (UI or backend) and why ?
+                Since this application is being built over microservice architecture, I guess api would be the best candidate for automation
+                , since major business logic would be verified at backend only. The only thing which we might be interested from UI
+                perspective would be the UX part of the whole application.
+                    Moreover UI automation is prone to flakiness and api is kind of fast and robust when it comes to managing
+                    a huge code base of automation repository.
+
+
+    Write a bug of high priority and low severity with respect to Zomato as an application
+                    - logo missing or broken is one such issue of high priority and low severity. Although the users wont be
+                    affected much as they can still go ahead and place an order successfully but from brand image perspective this seems to be
+                    a high priority thing.
+
+    Write a bug of high severity and low priority with respect to Zomato as an application
+                    - user is unable to launch help for old orders. Now if we think from business perspective its not
+                    a major one but when it comes to product this seems to be a high severity issue as one of the application
+                    flow is completely broken.
