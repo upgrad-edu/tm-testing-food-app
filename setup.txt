@@ -1,0 +1,44 @@
+Prequesties: 
+1. Java SE Development Kit 14 
+2. JAVA HOME set successfully
+3. Intellij 
+4. Install Maven
+5. M2_HOME set successfully
+
+
+--------------------------------
+Steps to create a basic Project:
+
+Step 1: File -> New -> Project -> Maven Project
+
+Step 2: Check “Create a simple project (skip archetype selection) and say “Next”
+
+Step 3: Name Group Id and Artifact Id as “MySeleniumProject” and say “Finish”. You can name as any name as you wish
+
+Step 4: Create a new package "samplePackage" under src/test/java of our Maven project and say “Finish”.
+
+Step 5: add testNG mvn dependency in pom.xml
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.14.3</version>
+    <scope>test</scope>
+</dependency>
+
+
+Step 6: add selenium-java dependency in pom.xml
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.141.59</version>
+</dependency>
+
+Step 7: mvn clean install
+
+Step 9: Download chromedriver
+
+
+--------------------------------
+
