@@ -1,0 +1,31 @@
+Problem Statement:
+Find a bug and document it in the proper bug reporting format.
+Website: https://www.zomato.com
+_________________________________________________________________________________
+Description: User gets landed on a blank page
+
+Steps to reproduce:
+1. Launch zomato.com
+2. Search for a restaurant in the i/p search text box
+3. Verify the search result page
+4. Verify that user has landed on a blank page
+
+Actual result: User lands to a blank page
+
+Expected result: User should land to a page with proper content
+
+Screenshot: link to screenshot/screen-recording
+
+Logs: curl 'https://www.googletagmanager.com/gtm.js?id=GTM-N5JXFL' \
+        -H 'authority: www.googletagmanager.com' \
+        -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36' \
+        -H 'accept: */*' \
+        -H 'sec-fetch-site: cross-site' \
+        -H 'sec-fetch-mode: no-cors' \
+        -H 'sec-fetch-dest: script' \
+        -H 'referer: https://www.zomato.com/privy/find-a-restaurant' \
+        -H 'accept-language: en-US,en;q=0.9' \
+        --compressed
+        throws 404.
+
+

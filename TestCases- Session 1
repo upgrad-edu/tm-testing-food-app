@@ -1,0 +1,58 @@
+Problem Statement:
+Design 05 test cases (positive,negative,edge) in proper format for the following user flow of a restaurant search and online
+food ordering website:
+
+
+{Launch www.zomato.com
+Search for a restaurant
+choose a location
+Lookout for search results
+click on first listed restaurant
+click on add review button}
+
+-----------*------------*--------------------
+Positive test cases:
+S.Nos: TC_01
+    Description: Verify that user has launched browser successfully
+        Pre condition: Users has chrome as it browser
+            Test steps: 1. Launch Chrome browser
+                 Actual result: Browser launched successfully
+                       Expected result: Chrome browser should launch successfully
+                             Status: PASS
+
+S.Nos: TC_02
+    Description: Verify that user has launched "www.zomato.com"
+        Pre condition: Users has chrome as it browser and has working internet connection
+             Test steps: 1. Launch chrome  2. Launch www.zomato.com in the browser
+                 Actual result: User has successfully landed on zomato landing page
+                     Expected result: User should successfully land on zomato landing page
+                        Status: PASS
+
+S.Nos: TC_03
+    Description: Verify the zomato logo om its landing page
+        Pre condition: Users has chrome as it browser and has working internet connection
+            Test steps: 1. Launch chrome  2. Launch www.zomato.com in the browser
+                Actual result: zomato logo is not present on the landing page
+                     Expected result: Clear logo should be present on the landing page
+                            Status: FAIL
+    -----------*------------*--------------------
+Negative test cases:
+S.Nos: TC_01
+    Description: Verify that user doesn't gets logged in with incorrect credentials
+        Pre condition: Users has chrome as it browser and has successfully completed sign in process beforehand
+            Test steps: 1. Launch Chrome browser 2. Navigate to zomato.com    3. Go to Log in page/button
+                 Actual result: User is not able to login and gets a message stating that "please enter correct credentials"
+                       Expected result: User should be denied login along with an informative message saying ""please enter correct credentials""
+                             Status: PASS
+
+
+-----------*------------*--------------------
+Edge test cases:
+S.Nos: TC_01
+    Description: Verify that application behaviour in case we enter "null" or blank space as input to search restaurant input box
+        Pre condition: Users has chrome as it browser and has successfully completed sign in process beforehand
+            Test steps: 1. Launch Chrome browser 2. Navigate to zomato.com    3. Search the above text/null in the i/p box
+                 Actual result: User gets a message stating that no restaurant found for this keyword string
+                       Expected result: User should get a message stating that no restaurant found for this keyword string
+                             Status: PASS
+
