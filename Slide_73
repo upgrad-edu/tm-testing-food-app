@@ -1,9 +1,9 @@
 Problem statement:
-Any online ordering system will basically have these major components:
+Any online food ordering system will basically have these major components:
     1. Ability to show restaurants and dishes to the end user
     2. An app to interact with users
     3. Ability to search any dish and see its availability
-    4. Ability to add items in cart
+    4. Ability to add items in the cart
     5. Ability to make payment via different modes of payment
     6. Ability to place an order
     7. Ability to track back the status of the current order
@@ -12,7 +12,7 @@ Any online ordering system will basically have these major components:
     10. Raise customer support queries
     11. Ability to cancel an ongoing order
     12. Ability to assign a rider who can complete the order
-    13. An to interact with delivery partners
+    13. Ability to interact with delivery partners
     14. Ability to compute earnings for the delivery partners
     15. Ability to navigate the delivery partner to pick up order and then deliver the parcel to end users address
     AND many more abilities can be a part of such a system.
