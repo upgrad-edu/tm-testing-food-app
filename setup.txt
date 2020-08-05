@@ -37,7 +37,9 @@ Step 6: add selenium-java dependency in pom.xml
 
 Step 7: mvn clean install
 
-Step 9: Download chromedriver
+Step 9: Download chromedriver and place it in the root directory of the project
+
+
 
 
 --------------------------------

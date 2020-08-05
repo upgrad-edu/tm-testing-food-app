@@ -8,12 +8,9 @@
     <classes>
       <class name="com.zomato.qa.TestCase.LandingPageTest">
         <methods>
-          <include name="verifyNewPageItem"/>
-          <include name="searchBoxTest"/>
+          <include name="verifyZomatoLogo"/>
           <include name="setUp"/>
-          <include name="searchTextTestAndVerifySame"/>
           <include name="tearDown"/>
-          <include name="landingPageTitleTest"/>
         </methods>
       </class> <!-- com.zomato.qa.TestCase.LandingPageTest -->
     </classes>

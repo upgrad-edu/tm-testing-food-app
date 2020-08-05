@@ -4,7 +4,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import com.zomato.qa.util.TestUtil;
@@ -13,7 +12,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class TestBase {
 	
@@ -44,8 +42,6 @@ public class TestBase {
 		if(browserName.equals("chrome")){
 			System.setProperty("webdriver.chrome.driver","/Users/abhinavchauhan/Documents/repo/tm-testing-food-app/chromedriver");
 
-			//URL urllan = new URL("http://localhost:4444/wd/hub");
-		 	//driver = new RemoteWebDriver(urllan, cap);
 			driver= new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
