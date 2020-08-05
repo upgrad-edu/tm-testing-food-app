@@ -1,8 +1,5 @@
-Problem Statement:
-Design 03 test cases for following public api at zomato.com
-
+Design 1 positive, 1 negative and 1 edge test case for following public api at zomato.com
 {Launch https://developers.zomato.com/documentation#!/common/categories}
-
 This API is offered by zomato to get a list of categories. List of all restaurants categorized under a particular restaurant type can be obtained using /Search API with Category ID as inputs
 
 CURL:
@@ -17,7 +14,6 @@ Model:
     "category_name": "Nightlife"
   }
 ]
-
 
 Success response:
 {
@@ -102,8 +98,6 @@ Success response:
     }
   ]
 }
-
-
 
 
 -----------*------------*--------------------
