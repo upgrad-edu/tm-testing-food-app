@@ -1,20 +1,17 @@
-Problem Statement:
-Design 05 test cases (positive,negative,edge) in proper format for the following user flow of a restaurant search and online
-food ordering website:
+Design 3 positive, 1 negative and 1 edge test case in proper format for the following user flow of a restaurant search and online food ordering website:
 
-
-{Launch www.zomato.com
-Search for a restaurant
-choose a location
-Lookout for search results
-click on first listed restaurant
-click on add review button}
+1. Launch www.zomato.com
+2. Search for a restaurant
+3. choose a location
+4. Lookout for search results
+5. click on first listed restaurant
+6. click on add review button
 
 -----------*------------*--------------------
 Positive test cases:
 S.Nos: TC_01
     Description: Verify that user has launched browser successfully
-        Pre condition: Users has chrome as it browser
+        Pre condition: Users has chrome as the browser
             Test steps: 1. Launch Chrome browser
                  Actual result: Browser launched successfully
                        Expected result: Chrome browser should launch successfully
@@ -29,7 +26,7 @@ S.Nos: TC_02
                         Status: PASS
 
 S.Nos: TC_03
-    Description: Verify the zomato logo om its landing page
+    Description: Verify the zomato logo on its landing page
         Pre condition: Users has chrome as it browser and has working internet connection
             Test steps: 1. Launch chrome  2. Launch www.zomato.com in the browser
                 Actual result: zomato logo is not present on the landing page
