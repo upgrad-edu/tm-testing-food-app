@@ -1,10 +1,9 @@
-Prequesties:
+Pre-requisite:
 1. Java SE Development Kit 14
 2. JAVA HOME set successfully
 3. Intellij
 4. Install Maven
 5. M2_HOME set successfully
-
 
 --------------------------------
 Steps to create a basic Project:
@@ -19,46 +18,46 @@ Step 4: Create a new package "samplePackage" under src/test/java of our Maven pr
 
 Step 5: add testNG mvn dependency in pom.xml
 
-Step 6: add following dependecnies in pom.xml:
+Step 6: add following dependencies and plugin in pom.xml:
 
-        <dependency>
+         <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.19</version>
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>testng.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+
+
+
+            <dependencies>
+                <dependency>
                     <groupId>org.testng</groupId>
                     <artifactId>testng</artifactId>
                     <version>6.11</version>
                     <scope>test</scope>
                 </dependency>
+
+                <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
                 <dependency>
                     <groupId>io.rest-assured</groupId>
                     <artifactId>rest-assured</artifactId>
-                    <version>3.0.5</version>
+                    <version>4.3.0</version>
                     <scope>test</scope>
                 </dependency>
+
                 <dependency>
                     <groupId>com.jayway.jsonpath</groupId>
                     <artifactId>json-path</artifactId>
                     <version>2.4.0</version>
                 </dependency>
-                <dependency>
-                    <groupId>com.fasterxml.jackson.core</groupId>
-                    <artifactId>jackson-databind</artifactId>
-                    <version>2.6.3</version>
-                </dependency>
-                <dependency>
-                    <groupId>net.javacrumbs.json-unit</groupId>
-                    <artifactId>json-unit</artifactId>
-                    <version>1.23.0</version>
-                </dependency>
-                <dependency>
-                    <groupId>io.rest-assured</groupId>
-                    <artifactId>rest-assured</artifactId>
-                    <version>3.0.2</version>
-                </dependency>
-                <dependency>
-                    <groupId>com.google.guava</groupId>
-                    <artifactId>guava</artifactId>
-                    <version>18.0</version>
-                </dependency>
-
 Step 7: mvn clean install
 Step 8: got to https://developers.zomato.com/api
 Step 9: Generate API key
