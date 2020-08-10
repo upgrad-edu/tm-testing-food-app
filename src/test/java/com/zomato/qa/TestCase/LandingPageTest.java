@@ -9,7 +9,6 @@ import java.net.MalformedURLException;
 
 public class LandingPageTest extends TestBase{
 	LandingPage landingPage;
-
 	
 	public LandingPageTest() {
 		super();
