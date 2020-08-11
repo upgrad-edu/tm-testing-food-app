@@ -50,12 +50,6 @@ public class TestBase {
 		}
 		else if(browserName.equals("FF")){
 
-		}
-		
-
-		
+		}	
 	}
-	
-
-
 }
