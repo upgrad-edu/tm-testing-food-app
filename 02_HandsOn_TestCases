@@ -42,6 +42,13 @@ S.Nos: TC_01
                        Expected result: User should be denied login along with an informative message saying ""please enter correct credentials""
                              Status: PASS
 
+S.Nos: TC_02
+    Description: Verify that search input box throws proper error on entering a very long string as a input
+        Pre condition: Users has chrome as it browser and has successfully completed sign in process beforehand
+            Test steps: 1. Launch Chrome browser 2. Navigate to zomato.com    3. Go to search bar  4. Enter this string as i/p "this is a very long string and of no use"
+                 Actual result: User gets an error message saying that the search you are trying to make is a invalid one.
+                       Expected result: User should get an error message saying that the search you are trying to make is a invalid one.
+                             Status: PASS
 
 -----------*------------*--------------------
 Edge test cases:
@@ -51,5 +58,14 @@ S.Nos: TC_01
             Test steps: 1. Launch Chrome browser 2. Navigate to zomato.com    3. Search the above text/null in the i/p box
                  Actual result: User gets a message stating that no restaurant found for this keyword string
                        Expected result: User should get a message stating that no restaurant found for this keyword string
+                             Status: PASS
+
+
+S.Nos: TC_02
+    Description: Verify that application behaviour in case user enters a SQL query as input to search restaurant input box
+        Pre condition: Users has chrome as it browser and has successfully completed sign in process beforehand
+            Test steps: 1. Launch Chrome browser 2. Navigate to zomato.com    3. Search a SQL query in the i/p box
+                 Actual result: User gets a message stating that no restaurant found for this keyword string/invalid keyword
+                       Expected result: User should get a message stating that no restaurant found for this keyword string or invalid keyword
                              Status: PASS
 
