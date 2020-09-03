@@ -107,12 +107,24 @@ S.Nos: TC_01
                  Actual result: API returns 200 response code with valid JSON response
                        Expected result: API should return 200 response code with valid JSON response
                              Status: PASS
-    -----------*------------*--------------------
+
+S.Nos: TC_02
+    Description: Verify the respone in case we pass integer for any string input param/object in json
+                 Actual result: API response has an category_id with value 1 and name as delivery
+                       Expected result: API should return a response with category_id=1 and name as delviery
+                             Status: PASS
+-----------*------------*--------------------
 Negative test cases:
 S.Nos: TC_01
     Description: Verify the API behaviour in case we don't pass any of the mandatory param/object in resp json
                                   Actual result: API returns 5xx response code with valid error message configured for tha error code
                                         Expected result: API should return 5xx response code with valid error message
+                                              Status: PASS
+
+S.Nos: TC_02
+    Description: Verify the API behaviour in case client sends incorrect request
+                                  Actual result: API returns 4xx response code with valid error message configured for tha error code
+                                        Expected result: API should return 4xx response code with valid error message
                                               Status: PASS
 -----------*------------*--------------------
 Edge test cases:
