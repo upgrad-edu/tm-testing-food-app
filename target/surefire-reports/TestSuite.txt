@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.647 sec <<< FAILURE! - in TestSuite
+TestCase1(FirstTest)  Time elapsed: 2.237 sec  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [403]
+	at FirstTest.TestCase1(FirstTest.java:25)
+
